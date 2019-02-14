@@ -1,9 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 img {
   width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 
+}
+.subtitle {
+  text-align: center;
 }
 h1 {
   font-size: 3rem;
@@ -12,5 +20,77 @@ h1 {
   border-color: midnightblue;
   text-align: center;
 
-
 }
+video {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+html {
+  font: 16px/1.618 sans-serif;
+}
+.container {
+  margin: 0 auto;
+  width: 50rem;
+  background-color: lavender;
+}
+.aboutme {
+  background-color: dodgerblue;
+}
+/*
+Don't chain selectors too specifically
+*/
+/* Default styles/resets */
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font: 20px/1.618 sans-serif;
+}
+
+/* Default tag styles */
+
+/* article {
+    background-color: yellow;
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+}
+article:nth-child(2) {
+    margin-right: 0;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+} */
+
+/* main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main > article {
+    flex: 1 1 17rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Rules for classes */
+
+/* .container {
+    margin: 0 auto;
+    width: 50rem;
+}
+
+.header-nav-links {
+    background-color: black;
+    color: white;
+} */ */ */
