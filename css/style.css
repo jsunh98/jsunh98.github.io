@@ -1,44 +1,118 @@
-* {
+ * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+body {
+    background-image: url("../images/bluebackground.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    /* color: white; */
+
+}
+.container {
+
+  margin: 0 auto;
+  width: 50%;
+
+}
+.header {
+  background-image: linear-gradient(110deg, #39add1, #1add39);
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: mediumslateblue;
+  opacity: 0.6;
+  border: 2px;
+  padding-bottom: 30px;
+  border-color: midnightblue;
+  text-align: center;
+  text-decoration: underline;
 }
 img {
   width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding: 20px;
 
 }
 .subtitle {
   text-align: center;
 }
 h1 {
-  font-size: 3rem;
-  background-color: mediumslateblue;
-  border-width: medium;
-  border-color: midnightblue;
-  text-align: center;
+
 
 }
-video {
-  width: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+h2 {
+    text-align: center;
+    text-decoration: underline;
+ }
+
+
 }
 html {
-  font: 16px/1.618 sans-serif;
+  font: 20px/1.618 sans-serif;
 }
-.container {
-  margin: 0 auto;
-  width: 50rem;
-  background-color: lavender;
-}
+
+
+  /* background-color: lavender; */
+
 .aboutme {
-  background-color: dodgerblue;
+  background-color: #1add39;
+
+  border-radius: 10px;
+  padding: 10px;
+
+
 }
+.projects {
+  text-align: center;
+  display: inline-block;
+  background-color: dodgerblue;
+  border-radius: 10px;
+
+
+}
+
+.contact {
+  background-color: #1add39;
+  display: flex;
+  flex-position: row;
+  justify-content: space-around;
+  align-items:baseline;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.projects p {
+  background-color: #1add39;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+.skills {
+  text-align: center;
+  background-color: #1add39;
+
+  border-radius: 10px;
+  padding: 10px;
+}
+.projects li {
+  background-color: dodgerblue;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  color: #1add39;
+}
+figure {
+  background
+}
+
+
 /*
 Don't chain selectors too specifically
 */
@@ -70,7 +144,7 @@ article:nth-child(2) {
     display: table;
 } */
 
-/* main {
+ main {
     display: flex;
     flex-wrap: wrap;
 }
@@ -85,7 +159,7 @@ p {
 
 /* Rules for classes */
 
-/* .container {
+ .container {
     margin: 0 auto;
     width: 50rem;
 }
@@ -93,4 +167,4 @@ p {
 .header-nav-links {
     background-color: black;
     color: white;
-} */ */ */
+ }
