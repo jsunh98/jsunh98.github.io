@@ -20,11 +20,11 @@ body {
 
 }
 .header {
-  background-image: linear-gradient(110deg, #39add1, #1add39);
+  background-image: linear-gradient(110deg, #3373b3, #31ad6d);
   border-radius: 10px;
   font-size: 1rem;
-  background-color: mediumslateblue;
-  opacity: 0.6;
+  /* background-color: mediumslateblue; */
+  /* opacity: 0.6; */
   border: 2px;
   padding-bottom: 30px;
   border-color: midnightblue;
@@ -63,7 +63,7 @@ html {
   /* background-color: lavender; */
 
 .aboutme {
-  background-color: #1add39;
+  background: rgba(66, 169, 105, 0.75);
 
   border-radius: 10px;
   padding: 10px;
@@ -71,7 +71,7 @@ html {
 
 }
 .projects_title {
-  background-color: dodgerblue;
+  background-color: rgba(67, 114, 168, 0.75);
   text-align: center;
   border-radius: 10px;
   padding: 10px;
@@ -80,7 +80,7 @@ html {
 }
 
 .contact {
-  background-color: #1add39;
+  background-color: #31ad6d;
   display: flex;
   flex-position: row;
   justify-content: space-around;
@@ -91,24 +91,24 @@ html {
 }
 
 .projects p {
-  background-color: #1add39;
+  background-color:rgba(66, 169, 105, 0.75);
   text-align: center;
   border-radius: 10px;
   padding: 10px;
 }
 .skills {
   text-align: center;
-  background-color: #1add39;
+  background-color:rgba(66, 169, 105, 0.75);
 
   border-radius: 10px;
   padding: 10px;
 }
 .projects li {
-  background-color: dodgerblue;
+  background-color: rgba(67, 114, 168, 0.75);
   text-align: center;
   border-radius: 10px;
   padding: 10px;
-  color: #1add39;
+  color: #31ad6d;
 }
 figure {
   background
