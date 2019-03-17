@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- <meta charset="utf-8"> -->
+  <title>Jason Hochheiser</title>
+</head>
+
+<body>
+  <!-- <div class="hero-image"> -->
+
+
+  <div class="container">
+
+
+    <header>
+      <div class="header">
+        <h1 class="header_item">JH</h1>
+        <!-- <h3 class="header_item">Junior Full Stack Java Developer</h3> -->
+      </div>
+
+      <div class="navList" id="myNav">
+        <a href="#home" class="active">Home</a>
+        <a href="#aboutme" data-target="#aboutModal" data-toggle="modal1" class="MainNavText" id="aboutMeLink">About Me</a>
+        <a href="#blog">Blog</a>
+        <a href="#skills" data-target="#skillsModal" data-toggle="modal2" class="MainNavText" id="skillsLink">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fas fa-hamburger"></a></li>
+      </div>
+
+    </header>
+    <main>
+      <div class="grid_container">
+
+        <div id="aboutModal" class="modal">
+          <div class="modal-content">
+            <span class="close close1" data-dismiss="modal1">&times;</span>
+            <img class="modalImg" src="C:\Users\jsunh98\wcci\code\jsunh98.github.io\src\main\static\css\images\myface.jpg" alt="myface">
+            <h2>Jason Hochheiser</h2>
+            <p class="aboutme_p">A full-stack junior software developer with a passion for problem solving and analytics. Staying on the cutting edge of technology with a focus in Fintech, Blockchain, and Artificial Intelligence. With a strong
+              background in logistics and organization, and interests involving commodities and futures trading, real estate investment, and classic auto investments.
+            </p>
+          </div>
+        </div>
+        <div id="skillsModal" class="modal">
+          <div class="modal-content">
+            <span class="close close2" data-dismiss="modal2">&times;</span>
+            <h2>Skills</h2>
+            <p class="skills_list">Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 • Flexbox • Grid • TDD • Agile (Scrum) • Object Oriented Programming (OOP) • AJAX • JSON • Restful APIs • Responsive Design / Mobile • Structured
+              Query Language (SQL) •
+              Relational Databases • Source Control
+            </p>
+          </div>
+        </div>
+        <div class="projects">
+          <h2 class="projects_title">Projects</h2>
+          <p class="project_p1">Click on the screenshots below to see my most recent work:</p>
+          <ul>
+            <li class="projects_hospital"></li>
+            <p class="project_p2">This is a Java project.</p>
+            <figure>
+              <a href="https://github.com/jsunh98/hospital-high.git"><img src="images/hospital-high.png" alt="hospital-high project"></a>
+            </figure>
+            <li class="projects_virtual-pet">Virtual Pet</a></li>
+            <p class="project_p3">Here's another Java project.</p>
+            <figure>
+              <a href="https://github.com/jsunh98/virutual-pet.git"><img src="images/virtual-pet.png" alt="virtual-pet project"></a>
+            </figure>
+            <li class="projects_dasmoto"></li>
+            <p>This one is an html/css project.</p>
+            <figure>
+              <a href="https://github.com/jsunh98/prj-rev-bwfs-dasmoto.git"><img src="images/Dasmoto.png" alt="Dasmoto project"></a>
+            </figure>
+          </ul>
+        </div>
+      </div>
+
+    </main>
+
+    <div class="contact">
+      <h2 class="contact-title">Contact Info:</h2>
+      <p class="phone">Cell Number: (614)-353-8159</p>
+      <a href="jsunh98@gmail.com"><i class="far fa-envelope"></i></a>
+      <a href="https://github.com/jsunh98" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/jason-hochheiser-8a6a4086/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+    <footer>&#169; Jason Hochheiser</footer>
+  </div>
+  <script src="./js/app.js">
+
+  </script>
+  <!-- </div> -->
+</body>
+
+</html>

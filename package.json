@@ -1,0 +1,22 @@
+{
+  "name": "jsunh98.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsunh98/jsunh98.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsunh98/jsunh98.github.io/issues"
+  },
+  "homepage": "https://github.com/jsunh98/jsunh98.github.io#readme",
+  "dependencies": {
+    "jest": "^24.5.0"
+  }
+}
