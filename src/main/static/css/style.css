@@ -7,6 +7,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  font-smooth: always;
+
 
 
 }
@@ -71,20 +73,6 @@ header {
     text-align: left;
   }
 }
-.container {
-
-
-  background-image: url("images/pilotmtn.jpg");
-
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  font-family: arial;
-  font-smooth: always;
-
-
-}
 
 .header {
   color: #fff;
@@ -94,6 +82,7 @@ header {
   float: left;
   font-weight: bold;
   align-items: baseline;
+
 }
 /* h3 {
   color: #fff;
@@ -104,23 +93,29 @@ header {
   font-weight: bold;
 } */
 
+.container {
 
+  display: grid;
+  background-image: url("../images/pilotmtn.jpg");
 
-
-
-
-
-
-
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
+
+.modal {
+  border-radius: 0.25%;
+}
+
 .modalImg {
   width: 25%;
-  display: flex;
+  display: block;
   justify-content: flex-start;
 }
 img {
   width: 50%;
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
@@ -143,9 +138,6 @@ h2 {
   padding-top: 10px;
 }
 
-
-  /* background-color: lavender; */
-
 .aboutme {
   font-family: sans-serif;
   display: none;
@@ -156,17 +148,21 @@ h2 {
   width: 100;
   height: 100;
   overflow: auto;
-  background-color: rgb(0,0,0);
+  color: white;
+  background-color: rgb(255,255,255);
   background-color: rgba(0,0,0,0.4);
 }
 
 .modal-content {
   font-family: sans-serif;
-  background-color: #fefefe;
-  margin: 15% auto;
+  background-color: black;
+  color: white;
+  margin: 7% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  border-radius: 0.25%;
+  width: 60%;
+  text-align: center;
 }
 
 .close {
@@ -182,7 +178,7 @@ h2 {
   text-decoration: none;
   cursor: pointer;
 }
-.projects_title {
+/* .projects_title {
   background-color: rgba(255,255,255,0.65);
 
   text-align: center;
@@ -190,8 +186,48 @@ h2 {
   padding: 10px;
 
 
+} */
+
+
+.fab {
+  /* transform: translate(-50%, -50%); */
+  font-size: 20px;
 }
 
+
+
+.carousel-container {
+  width: 60%;
+  margin:auto;
+  border: 5px white;
+  overflow: hidden;
+  position: relative;
+}
+.carousel-slide {
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
+#prevBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 5%;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+
+}
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 5%;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+
+}
 .contact {
   font-family: sans-serif;
   font-weight: normal;
@@ -211,84 +247,3 @@ h2 {
   overflow: hidden;
 
 }
-.fab {
-  /* transform: translate(-50%, -50%); */
-  font-size: 20px;
-}
-
-.projects p {
-  background-color: rgba(255,255,255,0.65);
-
-  text-align: center;
-  border-radius: 10px;
-  padding: 10px;
-}
-.skills {
-  text-align: center;
-  background-color: rgba(255,255,255,0.65);
-
-  border-radius: 10px;
-  padding: 10px;
-}
-.projects li {
-  background-color: rgba(255,255,255,0.65);
-
-  text-align: center;
-  border-radius: 10px;
-  padding: 10px;
-  color: #31ad6d;
-}
-
-
-
-/*
-Don't chain selectors too specifically
-*/
-/* Default styles/resets */
-/* * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    font: 20px/1.618 sans-serif;
-}
-
-/* Default tag styles */
-
-/* article {
-    background-color: yellow;
-    float: left;
-    width: 48%;
-    margin-right: 2%;
-}
-article:nth-child(2) {
-    margin-right: 0;
-}
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-} */
-
- /* main {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-main > article {
-    flex: 1 1 17rem;
-}
-
-p {
-    margin-bottom: 1rem;
-} */
-
-/* Rules for classes */
-
-/*
-.header-nav-links {
-    background-color: black;
-    color: white;
- } */
