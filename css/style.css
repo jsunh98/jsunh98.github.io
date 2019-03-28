@@ -95,7 +95,7 @@ header {
 
 .container {
 
-  display: grid;
+  display: fixed;
   background-image: url("../images/pilotmtn.jpg");
 
   background-repeat: no-repeat;
@@ -105,6 +105,7 @@ header {
 }
 
 .modal {
+  display: none;
   border-radius: 0.25%;
 }
 
@@ -113,14 +114,14 @@ header {
   display: block;
   justify-content: flex-start;
 }
-img {
+/* img {
   width: 50%;
   display: flex;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
 
-}
+} */
 .subtitle {
   text-align: center;
 }
@@ -198,20 +199,20 @@ h2 {
 
 .carousel-container {
   width: 60%;
-  margin:auto;
+  margin: auto;
   border: 5px white;
   overflow: hidden;
   position: relative;
 }
 .carousel-slide {
-  display: flex;
-  width: 100%;
-  height: 500px;
+  display: relative;
+  width: 80%;
+  height: 300px;
 }
 #prevBtn {
   position: absolute;
   top: 50%;
-  z-index: 10;
+  z-index: 1;
   left: 5%;
   font-size: 30px;
   color: white;
@@ -221,7 +222,7 @@ h2 {
 #nextBtn {
   position: absolute;
   top: 50%;
-  z-index: 10;
+  z-index: 1;
   right: 5%;
   font-size: 30px;
   color: white;

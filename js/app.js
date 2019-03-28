@@ -41,7 +41,7 @@ window.onclick = function(event) {
 
 
 const carouselSlide = document.querySelector('.carousel-slide');
-const carouselImages = document.querySelector('.carousel-slide img');
+const carouselImages = document.querySelector('.carousel-slide-item');
 
 // buttons
 const prevBtn = document.querySelector('#prevBtn');
