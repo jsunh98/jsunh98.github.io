@@ -1,18 +1,24 @@
- * {
-  box-sizing: border-box;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-body {
+
+.hero-image {
+  background-image: url("../images/snowroad.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+/* body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
   font-smooth: always;
+} */
 
-
-
-}
-header {
+/* header {
   display: flex;
   position: fixed;
   align-items: center;
@@ -26,8 +32,161 @@ header {
 }
 .header_item {
   align-items: center;
+} */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Fahkwang', sans-serif;
+  min-height: 8vh;
+  background-color: #5b78c7;
+
 }
-.navList {
+
+.logo {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 20px;
+  margin-left: 40px;
+}
+
+.nav-links {
+  display: flex;
+  width: 30%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+
+
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+/* .landing {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing h1 {
+  margin: 100px;
+  font-size: 50px;
+  color: #ae5fce;
+} */
+/* nav {
+    position: relative;
+  } */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.6s ease;
+  /* position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2; */
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x:auto;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #5b78c7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.6s ease-in;
+
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+/* .nav-links {
+  position: fixed;
+  background: #5b78c7;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  clip-path: circle(100px at 90% -10%);
+  -webkit-clip-path: circle(100px at 90% -10%);
+  transition: all 1s ease-out;
+  pointer-events: none;
+}
+.hero-image {
+background-image: url("../images/snowroad.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+}
+
+
+
+/* .navList {
   display: flex;
   float: right;
   overflow: hidden;
@@ -42,10 +201,8 @@ header {
   text-decoration: none;
   font-size: 18px;
 
-}
-
-
-.navList a:hover,
+} */
+/* .navList a:hover,
 .navList a.active {
   color: #fff;
   background: #2196f3;
@@ -92,8 +249,7 @@ header {
   float: center;
   font-weight: bold;
 } */
-
-.container {
+/* .container {
 
   display: fixed;
   background-image: url("../images/pilotmtn.jpg");
@@ -102,9 +258,8 @@ header {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-}
-
-.modal {
+} */
+/* .modal {
   display: none;
   border-radius: 0.25%;
 }
@@ -113,7 +268,7 @@ header {
   width: 25%;
   display: block;
   justify-content: flex-start;
-}
+} */
 /* img {
   width: 50%;
   display: flex;
@@ -122,7 +277,7 @@ header {
   padding: 20px;
 
 } */
-.subtitle {
+/* .subtitle {
   text-align: center;
 }
 
@@ -137,9 +292,8 @@ h2 {
 }
 .skills skills_list {
   padding-top: 10px;
-}
-
-.aboutme {
+} */
+/* .aboutme {
   font-family: sans-serif;
   display: none;
   position: fixed;
@@ -152,9 +306,8 @@ h2 {
   color: white;
   background-color: rgb(255,255,255);
   background-color: rgba(0,0,0,0.4);
-}
-
-.modal-content {
+} */
+/* .modal-content {
   font-family: sans-serif;
   background-color: black;
   color: white;
@@ -164,9 +317,8 @@ h2 {
   border-radius: 0.25%;
   width: 60%;
   text-align: center;
-}
-
-.close {
+} */
+/* .close {
   color: #aaa;
   float: right;
   font-size: 28px;
@@ -178,7 +330,7 @@ h2 {
   color: black;
   text-decoration: none;
   cursor: pointer;
-}
+} */
 /* .projects_title {
   background-color: rgba(255,255,255,0.65);
 
@@ -188,63 +340,3 @@ h2 {
 
 
 } */
-
-
-.fab {
-  /* transform: translate(-50%, -50%); */
-  font-size: 20px;
-}
-
-
-
-.carousel-container {
-  width: 60%;
-  margin: auto;
-  border: 5px white;
-  overflow: hidden;
-  position: relative;
-}
-.carousel-slide {
-  display: relative;
-  width: 80%;
-  height: 300px;
-}
-#prevBtn {
-  position: absolute;
-  top: 50%;
-  z-index: 1;
-  left: 5%;
-  font-size: 30px;
-  color: white;
-  cursor: pointer;
-
-}
-#nextBtn {
-  position: absolute;
-  top: 50%;
-  z-index: 1;
-  right: 5%;
-  font-size: 30px;
-  color: white;
-  cursor: pointer;
-
-}
-.contact {
-  font-family: sans-serif;
-  font-weight: normal;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width:100%;
-  background: flex;
-  display: flex;
-  justify-content: space-around;
-  background: black;
-  color: #fff;
-
-  align-items: center;
-  text-align: center;
-  padding-top: 5px;
-  overflow: hidden;
-
-}
