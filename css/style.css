@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-.hero-image {
+body {
+  font-family: 'Fahkwang', sans-serif;
   background-image: url("../images/snowroad.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
