@@ -7,10 +7,10 @@
 }
 .card {
   position: relative;
-  width: 300px;
-  height: 400px;
-  border-radius: 5%;
-  background: #5b78c7;
+  width: 360px;
+  height: 500px;
+  border-radius: 7%;
+  /* background: #5b78c7; */
   overflow: hidden;
 }
 
@@ -34,11 +34,11 @@ input {
   text-align: center;
   line-height: 50px;
   font-size: 36px;
-  box-shadow: 0 0 0 0px #5b78c7;
+  /* box-shadow: 0 0 0 0px #5b78c7; */
 }
 input:checked ~ .aboutToggle {
-    box-shadow: 0 0 0 500px #5b78c7;
-    transform: rotate(360deg) translate(0px,2px);
+    /* box-shadow: 0 0 0 500px #5b78c7; */
+    transform: rotate(225deg) translate(0px,2px);
 }
 #aboutImage {
   display: flex;
@@ -61,6 +61,13 @@ input:checked ~ .aboutToggle {
   pointer-events: none;
   transition: 0.5s;
   opacity: 0;
+}
+.contact {
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+  padding-top: 20px;
+  cursor: pointer;
 }
 input:checked ~ .content {
   opacity: 1;
