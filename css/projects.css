@@ -1,0 +1,33 @@
+.projectCard {
+  position: relative;
+  background: #fff;
+  width: 400px;
+  height: 500px;
+  margin: 0 auto;
+}
+.projectCard .projectContent {
+  widows: 400px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.projectCard .projectContent a {
+  display: inline-block;
+  margin: 10px 0 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 2px solid #262626;
+  color: #262626;
+  font-weight: 600;
+}
+.projectCard .sliderText {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+.projectCard .sliderText h3 {
+
+}
