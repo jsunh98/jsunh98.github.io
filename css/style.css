@@ -1,342 +1,44 @@
-* {
-  margin: 0;
-  padding: 0;
+*,
+*::before,
+*::after {
+
   box-sizing: border-box;
 }
 
-.hero-image {
-  background-image: url("../images/snowroad.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+/* custom properties */
+:root {
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: 'Poppins', sans-serif;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-light: #fff;
+  --clr-dark: #303030;
+  --clr-accent: #16e0bd;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
 }
-/* body {
+
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+  }
+}
+
+/* general styles */
+
+body {
+  background: var(--clr-light);
+  color: var(--clr-dark);
   margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  font-smooth: always;
-} */
-
-/* header {
-  display: flex;
-  position: fixed;
-  align-items: center;
-  top: 0;
-  left: 0;
-  padding-left: 10px;
-  background: black;
-  width: 100%;
-  box-sizing: border-box;
-
+  font-family: var(--ff-primary);
+  font-size: var-(--fs-body);
+  line-height: 1.6;
 }
-.header_item {
-  align-items: center;
-} */
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-family: 'Fahkwang', sans-serif;
-  min-height: 8vh;
-  background-color: #5b78c7;
-
-}
-
-.logo {
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 20px;
-  margin-left: 40px;
-}
-
-.nav-links {
-  display: flex;
-  width: 30%;
-  height: 100%;
-  justify-content: space-around;
-  align-items: center;
-  margin-left: auto;
-
-
-}
-
-.nav-links li {
-  list-style: none;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-  letter-spacing: 3px;
-  font-weight: bold;
-}
-
-/* .landing {
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.landing h1 {
-  margin: 100px;
-  font-size: 50px;
-  color: #ae5fce;
-} */
-/* nav {
-    position: relative;
-  } */
-.hamburger {
-  display: none;
-  cursor: pointer;
-}
-
-.hamburger div {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 5px;
-  transition: all 0.6s ease;
-  /* position: absolute;
-    cursor: pointer;
-    right: 5%;
-    top: 50%;
-    transform: translate(-5%, -50%);
-    z-index: 2; */
-}
-
-@media screen and (max-width: 1024px) {
-  .nav-links {
-    width: 60%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    overflow-x:auto;
-  }
-  .nav-links {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    background-color: #5b78c7;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    transform: translateX(100%);
-    transition: transform 0.6s ease-in;
-
-  }
-
-  .nav-links li {
-    opacity: 0;
-  }
-
-  .hamburger {
-    display: block;
-  }
-}
-
-.nav-active {
-  transform: translateX(0%);
-
-}
-
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-.toggle .line1 {
-  transform: rotate(-45deg) translate(-5px,6px);
-}
-.toggle .line2 {
-  opacity: 0;
-}
-.toggle .line3 {
-  transform: rotate(45deg) translate(-5px,-6px);
-}
-/* .nav-links {
-  position: fixed;
-  background: #5b78c7;
-  height: 100vh;
-  width: 100%;
-  flex-direction: column;
-  clip-path: circle(100px at 90% -10%);
-  -webkit-clip-path: circle(100px at 90% -10%);
-  transition: all 1s ease-out;
-  pointer-events: none;
-}
-.hero-image {
-background-image: url("../images/snowroad.jpg");
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: cover;
-background-position: center;
-}
-
-
-
-/* .navList {
-  display: flex;
-  float: right;
-  overflow: hidden;
-  background: #black;
-}
-.navList a {
-  float: right;
-  display: flex;
-  color: #fff;
-  text-align: right;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 18px;
-
-} */
-/* .navList a:hover,
-.navList a.active {
-  color: #fff;
-  background: #2196f3;
-}
-.navList .icon {
-  display: none;
-}
-@media screen and (max-width: 700px) {
- .navList a:not(:first-child) {display: none;}
- .navList a.icon {
-   float: right;
-   display: block;
- }
-}
-@media screen (max-width: 700px) {
-  .navList.responsive {position: relative;}
-  .navList.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navList.responsive li {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-.header {
-  color: #fff;
-  height: 50px;
-  line-height: 50px;
-  font-size: 18px;
-  float: left;
-  font-weight: bold;
-  align-items: baseline;
-
-}
-/* h3 {
-  color: #fff;
-  height: 50px;
-  line-height: 50px;
-  font-size: 18px;
-  float: center;
-  font-weight: bold;
-} */
-/* .container {
-
-  display: fixed;
-  background-image: url("../images/pilotmtn.jpg");
-
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-} */
-/* .modal {
-  display: none;
-  border-radius: 0.25%;
-}
-
-.modalImg {
-  width: 25%;
-  display: block;
-  justify-content: flex-start;
-} */
-/* img {
-  width: 50%;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-
-} */
-/* .subtitle {
-  text-align: center;
-}
-
-h2 {
-    text-align: center;
-    text-decoration: underline;
- }
-
-}
-.skills {
-  margin-bottom: 200px;
-}
-.skills skills_list {
-  padding-top: 10px;
-} */
-/* .aboutme {
-  font-family: sans-serif;
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100;
-  height: 100;
-  overflow: auto;
-  color: white;
-  background-color: rgb(255,255,255);
-  background-color: rgba(0,0,0,0.4);
-} */
-/* .modal-content {
-  font-family: sans-serif;
-  background-color: black;
-  color: white;
-  margin: 7% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  border-radius: 0.25%;
-  width: 60%;
-  text-align: center;
-} */
-/* .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-} */
-/* .projects_title {
-  background-color: rgba(255,255,255,0.65);
-
-  text-align: center;
-  border-radius: 10px;
-  padding: 10px;
-
-
-} */
